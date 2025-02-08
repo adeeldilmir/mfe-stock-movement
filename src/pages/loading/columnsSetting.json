@@ -1,0 +1,38 @@
+{
+    "columns": [
+        {
+            "name": "Manifest ID",
+            "mapping": {
+                "line1": { "path": "id", "type": "Text" }
+            }
+        },
+        {
+            "name": "Pieces",
+            "mapping": { "line1": { "path": "pieces", "type": "Text" } }
+        },
+        {
+            "name": "Destination City",
+            "mapping": { "line1": { "path": "city", "type": "Text" } }
+        },
+        {
+            "name": "Weight",
+            "mapping": { "line1": { "path": "weight", "type": "Text" } }
+        },
+        {
+            "name": "Actions",
+            "mapping": {
+                "line1": { "path": "rowSpecificButtons", "type": "Button" }
+            }
+        }
+    ],
+    "tableMetadata": {
+        "pageSize": 10,
+        "isMultiline": false,
+        "rowMenuOptions": [
+            {
+                "label": "View Details",
+                "action": "view-details"
+            }
+        ]
+    }
+}

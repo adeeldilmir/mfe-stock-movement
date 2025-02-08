@@ -1,0 +1,106 @@
+{
+    "columns": [
+     
+        {
+            "name": "Manifest",
+            "mapping": {
+                "line1": { "path": "id", "type": "Text" }
+            }
+        },
+        {
+            "name": "",
+            "mapping": {
+                "line1": {
+                    "path": "actionRowSpecificButtons",
+                    "type": "ContextMenu"
+                }
+            },
+            "align": "center"
+        },
+        {
+            "name": "Created At",
+            "mapping": {
+                "line1": { "path": "createdAt", "type": "Text" }
+            }
+        },
+        {
+            "name": "Weight",
+            "mapping": { "line1": { "path": "weight", "type": "Text" } }
+        },
+        {
+            "name": "Current Status",
+            "mapping": { "line1": { "path": "currentStatus", "type": "Text" } }
+        },
+        {
+            "name": "Current Status Date",
+            "mapping": {
+                "line1": { "path": "currentStatusDate", "type": "Text" }
+            }
+        },
+        {
+            "name": "Bag Count",
+            "mapping": { "line1": { "path": "bagCount", "type": "Text" } }
+        },
+      
+        {
+            "name": "Journey Type",
+            "mapping": {
+                "line1": { "path": "journeyTypeCode", "type": "Text" }
+            }
+        },
+      
+        {
+            "name": "Origin City",
+            "mapping": { "line1": { "path": "originCity", "type": "Text" } }
+        },
+        {
+            "name": "Origin Warehouse",
+            "mapping": {
+                "line1": { "path": "originWarehouse", "type": "Text" }
+            }
+        },
+        {
+            "name": "Destination City",
+            "mapping": {
+                "line1": { "path": "destinationCity", "type": "Text" }
+            }
+        },
+        {
+            "name": "Product Type",
+            "mapping": {
+                "line1": { "path": "productTypeCode", "type": "Text" }
+            }
+        },
+        {
+            "name": "Service Type",
+            "mapping": {
+                "line1": { "path": "serviceTypeCode", "type": "Text" }
+            }
+        },
+        {
+            "name": "Actions",
+            "mapping": {
+                "line1": { "path": "rowSpecificButtons", "type": "Button" }
+            }
+        }
+        
+    ],
+    "tableMetadata": {
+        "pageSize": 50,
+        "currentPage": 1,
+        "total": 0,
+        "isMultiline": false,
+        "rowMenuOptions": [
+            {
+                "label": "View Details",
+                "action": "view-details"
+            }
+        ],
+        "rowContextMenuOptions": [
+            {
+                "label": "Details",
+                "action": "viewRequestDetails"
+            }
+        ]
+    }
+}

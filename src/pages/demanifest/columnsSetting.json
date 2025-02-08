@@ -1,0 +1,79 @@
+{
+    "columns": [      
+        {
+            "name": "ID",
+            "mapping": {
+                "line1": {
+                    "path": "id",
+                    "type": "Text"
+                }
+            }
+        },
+        {
+            "name": "Manifest ID",
+            "mapping": {
+                "line1": {
+                    "path": "manifestId",
+                    "type": "Text"
+                }
+            }
+        },
+        {
+            "name": "Type",
+            "mapping": {
+                "line1": {
+                    "path": "type",
+                    "type": "Text"
+                }
+            }
+        },
+        {
+            "name": "Weight(KG)",
+            "mapping": {
+                "line1": {
+                    "path": "weight",
+                    "type": "Text"
+                }
+            }
+        },
+        {
+            "name": "Pieces",
+            "mapping": {
+                "line1": {
+                    "path": "pieces",
+                    "type": "Text"
+                }
+            }
+        },
+        {
+            "name": "Vendor Name",
+            "mapping": { "line1": { "path": "vendorName", "type": "Text" } }
+        },
+        {
+            "name": "Origin City",
+            "mapping": { "line1": { "path": "originCity", "type": "Text" } }
+        },
+        {
+            "name": "Destination City",
+            "mapping": {
+                "line1": { "path": "destinationCity", "type": "Text" }
+            }
+        },
+        {
+            "name": "Actions",
+            "mapping": {
+                "line1": { "path": "rowSpecificButtons1", "type": "Button" }
+            }
+        }
+    ],
+    "tableMetadata": {
+        "pageSize": 10,
+        "isMultiline": false,
+        "rowMenuOptions": [
+            {
+                "label": "View Details",
+                "action": "view-details"
+            }
+        ]
+    }
+}

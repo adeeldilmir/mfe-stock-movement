@@ -1,0 +1,162 @@
+{
+    "panels": [
+        {
+            "name": "Details",
+            "type": "PanelKeyValue",
+            "visible": true,
+            "columns": [
+                {
+                    "name": "Load Id",
+                    "mapping": {
+                        "line1": {
+                            "path": "loadingId",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Pieces",
+                    "mapping": {
+                        "line1": {
+                            "path": "contentCount",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Weight",
+                    "mapping": {
+                        "line1": {
+                            "path": "weight",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Driver Name",
+                    "mapping": {
+                        "line1": {
+                            "path": "driverName",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Vehicle Number",
+                    "mapping": {
+                        "line1": {
+                            "path": "vehicleNumber",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Route",
+                    "mapping": {
+                        "line1": {
+                            "path": "stops",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Origin City",
+                    "mapping": {
+                        "line1": {
+                            "path": "originCity",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Origin Hub",
+                    "mapping": {
+                        "line1": {
+                            "path": "originHub",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Destination City",
+                    "mapping": {
+                        "line1": {
+                            "path": "destinationCity",
+                            "type": "Text"
+                        }
+                    }
+                },                
+                {
+                    "name": "Created Date",
+                    "mapping": {
+                        "line1": {
+                            "path": "createdAt",
+                            "type": "Text"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Manifests",
+            "type": "PanelTable",
+            "visible": true,
+            "panelDataPath": "manifestIds",
+            "columns": [
+                {
+                    "name": "Manifest Id",
+                    "mapping": {
+                        "line1": {
+                            "path": "",
+                            "type": "Link"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Status History",
+            "type": "PanelTable",
+            "visible": true,
+            "panelDataPath": "statusHistory",
+            "columns": [
+                {
+                    "name": "Status",
+                    "mapping": {
+                        "line1": {
+                            "path": "status",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "By",
+                    "mapping": {
+                        "line1": {
+                            "path": "createdBy",
+                            "type": "Text"
+                        },
+                        "line2": {
+                            "path": "location",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Date",
+                    "mapping": {
+                        "line1": {
+                            "path": "createdAt",
+                            "type": "Text"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "info": {
+            "color": "red"
+        }
+    }
+}

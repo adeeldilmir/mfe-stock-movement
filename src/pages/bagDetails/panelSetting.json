@@ -1,0 +1,162 @@
+{
+    "panels": [
+        {
+            "name": "Details",
+            "type": "PanelKeyValue",
+            "visible": true,
+            "columns": [
+                {
+                    "name": "Bag Id",
+                    "mapping": {
+                        "line1": {
+                            "path": "baggingId",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Pieces",
+                    "mapping": {
+                        "line1": {
+                            "path": "parcelCount",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Weight",
+                    "mapping": {
+                        "line1": {
+                            "path": "weight",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Journey Type",
+                    "mapping": {
+                        "line1": {
+                            "path": "journeyTypeCode",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Product Type",
+                    "mapping": {
+                        "line1": {
+                            "path": "productTypeCode",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Service Type",
+                    "mapping": {
+                        "line1": {
+                            "path": "serviceTypeCode",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Origin City",
+                    "mapping": {
+                        "line1": {
+                            "path": "originCity",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Origin Hub",
+                    "mapping": {
+                        "line1": {
+                            "path": "originHub",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "Destination City",
+                    "mapping": {
+                        "line1": {
+                            "path": "destinationCity",
+                            "type": "Text"
+                        }
+                    }
+                },                
+                {
+                    "name": "Created Date",
+                    "mapping": {
+                        "line1": {
+                            "path": "createdAt",
+                            "type": "Text"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parcels",
+            "type": "PanelTable",
+            "visible": true,
+            "panelDataPath": "parcelIds",
+            "columns": [
+                {
+                    "name": "CN",
+                    "mapping": {
+                        "line1": {
+                            "path": "",
+                            "type": "Link"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Status History",
+            "type": "PanelTable",
+            "visible": true,
+            "panelDataPath": "statusHistory",
+            "columns": [
+                {
+                    "name": "Status",
+                    "mapping": {
+                        "line1": {
+                            "path": "status",
+                            "type": "Text"
+                        }
+                    }
+                },
+                {
+                    "name": "By",
+                    "mapping": {
+                        "line1": {
+                            "path": "createdBy",
+                            "type": "Text"
+                        },
+                        "line2": {
+                            "path": "location",
+                            "type": "Text"
+                        }                        
+                    }
+                },
+                {
+                    "name": "Date",
+                    "mapping": {
+                        "line1": {
+                            "path": "createdAt",
+                            "type": "Text"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "info": {
+            "color": "red"
+        }
+    }
+}
